@@ -31,7 +31,7 @@
          to: Routes.user_path(@conn, :show, @current_user) %>
         |
         <%= link "Log out", to: Routes.session_path(@conn, :delete), method: :delete %>
-      <%= else %>
+      <% else %>
         <%= link "Login", to: Routes.session_path(@conn, :new) %>
       <% end %>
     </div>
